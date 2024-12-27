@@ -3,6 +3,7 @@ import json
 import subprocess
 import requests
 from pathlib import Path
+import  whisper
 from openai import OpenAI
 from openai import OpenAIError
 from concurrent.futures import ThreadPoolExecutor

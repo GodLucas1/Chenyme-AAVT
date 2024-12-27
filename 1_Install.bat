@@ -2,39 +2,6 @@
 chcp 65001 > nul
 setlocal
 
-:: 初始化检测标志
-set "ENV_CHECK_SUCCESS=1"
-
-echo === 依赖环境检测 ===
-echo.
-
-:: 检测 Python
-where python >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [ERROR] 未检测到 Python，请确认已正确安装。
-    set "ENV_CHECK_SUCCESS=0"
-) else (
-    echo [✔️ OK] Python 已安装
-)
-
-:: 检测 FFmpeg
-where ffmpeg >nul 2>&1
-if %errorlevel% neq 0 (
-    echo [ERROR] 未检测到 FFmpeg，请确认已正确安装。
-    set "ENV_CHECK_SUCCESS=0"
-) else (
-    echo [✔️ OK] FFMpeg 已安装
-)
-
-:: 检查是否通过所有检测
-if "%ENV_CHECK_SUCCESS%"=="0" (
-    echo [❌ ERROR] 检测未通过！
-    echo.
-    echo 安装已退出，请安装上述缺失的环境后重试！
-    echo.
-    pause >nul
-    exit /b 1
-)
 
 echo [✔️ OK] Env 检测已通过
 

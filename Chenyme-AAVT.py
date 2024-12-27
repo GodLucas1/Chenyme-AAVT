@@ -29,6 +29,7 @@ if "verify" in st.session_state:
         ],
         "Project": [
             st.Page(page="page/project/audio.py", title="音频识别", icon=":material/graphic_eq:"),
+            st.Page(page="page/project/audio_generate.py", title="音频生成", icon=":material/graphic_eq:"),
             st.Page(page="page/project/video.py", title="视频识别", icon=":material/subscriptions:"),
             st.Page(page="page/project/translate.py", title="字幕翻译", icon=":material/subtitles:"),
         ],

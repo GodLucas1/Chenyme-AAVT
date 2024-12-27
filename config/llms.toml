@@ -1,7 +1,7 @@
 [Home]
-key = "sk-mTx1Qx04xagOqpHJB0DeF581E8C84370818c7aD5D15cA309"
+key = "b24a110c175f1c1ccb7914100ab07d3c.4jbYNhqVWGI90tbM"
 url = "https://api.chenyme.top/v1"
-model = [ 0, 1,]
+model = [ 22, 25,]
 
 [Local]
 key = ""
@@ -39,7 +39,7 @@ key = ""
 url = "https://api.moonshot.cn/v1"
 
 [ChatGLM]
-key = ""
+key = "b24a110c175f1c1ccb7914100ab07d3c.4jbYNhqVWGI90tbM"
 url = "https://open.bigmodel.cn/api/paas/v4/"
 
 [Yi]

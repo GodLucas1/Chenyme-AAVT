@@ -7,4 +7,4 @@ srt = "关闭"
 prompt = "Prompt for GPT"
 
 [other]
-first = false
+first = true
